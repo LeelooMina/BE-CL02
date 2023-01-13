@@ -14,4 +14,11 @@ puts arr << 11
 
 arr.each do |num|
     puts num
+
+    num_test = num * 2
+    if num_test.even?
+        puts "#{num} is an even number."
+    elsif num_test.odd?
+        puts "#{num} is an odd number"
+    end
 end
