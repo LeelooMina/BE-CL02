@@ -22,3 +22,18 @@ arr.each do |num|
         puts "#{num} is an odd number"
     end
 end
+
+arr.select do |num|
+    puts num 
+    
+    num = num*2
+
+    if num.even?
+        puts "#{num} is an even number."
+    elsif num.odd?
+        puts "#{num} is an odd number"
+    end
+
+end
+
+
