@@ -49,7 +49,7 @@ def add_strings(num1, num2)
   b = num2.length - 1
 
 
-  while a >= 0 || b >= 0
+  while a >= 0 || b >= 0 || carry_the_one > 0
 
     temp_sum = carry_the_one
    
@@ -83,3 +83,5 @@ puts add_strings("11", "123")
 puts add_strings("456", "77")
 
 puts add_strings("0", "0")
+
+puts add_strings("1", "9")
