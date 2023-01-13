@@ -1,9 +1,13 @@
-class Person
-
-
-    def eat(food) 
-        puts "Eating #{food}"
-    end
+module Traits
+  def eat
+    puts "Eating"
+  end
 end
 
-module trai
+class Person
+  include Traits
+end
+
+person = Person.new
+
+person.eat
